@@ -1,0 +1,37 @@
+test_that("scales functions works", {
+  fill_scale <- scale_fill_msu_c(palette = "msu_seq")
+  expect_equal(fill_scale$is_discrete(), FALSE)
+  expect_error(scale_fill_msu_c(palette = "msu_sequential"))
+  expect_error(scale_fill_msu_c(palette = "msu_seq", direction = 0))
+
+  fill_scale <- scale_fill_msu_d(palette = "msu_qual1")
+  expect_equal(fill_scale$is_discrete(), TRUE)
+  fill_scale <- scale_fill_msu_d(palette = "msu_qual1", direction = -1)
+  expect_equal(fill_scale$is_discrete(), TRUE)
+  expect_error(scale_fill_msu_d(palette = "msu_qualit"))
+  expect_error(scale_fill_msu_d(palette = "msu_qual1", direction = 0))
+
+  colour_scale <- scale_colour_msu_c(palette = "msu_seq")
+  expect_equal(colour_scale$is_discrete(), FALSE)
+  expect_error(scale_colour_msu_c(palette = "msu_sequential"))
+  expect_error(scale_colour_msu_c(palette = "msu_seq", direction = 0))
+
+  colour_scale <- scale_color_msu_c(palette = "msu_seq")
+  expect_equal(colour_scale$is_discrete(), FALSE)
+  expect_error(scale_color_msu_c(palette = "msu_sequential"))
+  expect_error(scale_color_msu_c(palette = "msu_seq", direction = 0))
+
+  colour_scale <- scale_colour_msu_d(palette = "msu_qual1")
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  colour_scale <- scale_colour_msu_d(palette = "msu_qual1", direction = -1)
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  expect_error(scale_colour_msu_d(palette = "msu_qualit"))
+  expect_error(scale_colour_msu_d(palette = "msu_qual1", direction = 0))
+
+  colour_scale <- scale_color_msu_d(palette = "msu_qual1")
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  colour_scale <- scale_color_msu_d(palette = "msu_qual1", direction = -1)
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  expect_error(scale_color_msu_d(palette = "msu_qualit"))
+  expect_error(scale_color_msu_d(palette = "msu_qual1", direction = 0))
+})

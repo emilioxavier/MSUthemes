@@ -1,0 +1,22 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+CRAN-SUBMISSION
+CLAUDE.md
+*.code-workspace
+
+/.quarto/
+**/*.quarto_ipynb
+
+# macOS
+.DS_Store
+
+# Package build artifacts
+*.tar.gz
+*.zip
+
+# Documentation builds
+docs/
+_site/
+inst/doc/

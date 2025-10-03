@@ -1,0 +1,192 @@
+---
+title: MSUthemes Colour Palettes
+output:
+  quarto::html:
+    vignette: true >
+      %\VignetteIndexEntry{MSUthemes Colour Palettes}
+      %\VignetteEngine{quarto::html}
+      %\VignetteEncoding{UTF-8}
+---
+
+Sometimes you want to see the colours in the colour palette and know their associated variable name(s) and hex code. This vignette displays this information.
+
+## MSU Qualitative Colour Palette 1
+
+```{r}
+#| label: display MSU colour palette
+#| echo: FALSE
+#| results: 'asis'
+library(MSUthemes)
+
+# Define the msu_qual1 palette colors, names, and variable names
+msu_qual1_data <- data.frame(
+  name = c("MSU Green", "Kelly Green", "Grey", "Orange", "Teal",
+           "Blue-Grey", "Dark Grey", "Yellow-Green", "Cream",
+           "Texas Brown", "Split Pea", "Eggplant", "Sienna"),
+  hex = c("#18453b", "#0db14b", "#97a2a2", "#f08521", "#008183",
+          "#909ab7", "#535054", "#d1de3f", "#e8d9b5",
+          "#c89a58", "#94ae4a", "#6e005f", "#cb5a28"),
+  vars = c("msu_green, msu_Green, msu_SpartanGreen",
+           "msu_Kelly",
+           "msu_grey, msu_gray",
+           "msu_orange",
+           "msu_teal",
+           "msu_blue, msu_bluegrey, msu_bluegray",
+           "msu_darkgrey, msu_darkgray",
+           "msu_yellow, msu_greenyellow, msu_yellowgreen, msu_grellow",
+           "msu_peach",
+           "msu_orange, msu_burnt",
+           "msu_splitpea",
+           "msu_purple",
+           "msu_red"),
+  stringsAsFactors = FALSE
+)
+
+# Create HTML table
+cat('<table style="width:100%; border-collapse: collapse;">\n')
+cat('<thead>\n')
+cat('<tr style="border-bottom: 2px solid #ddd;">\n')
+cat('<th style="text-align: left; padding: 8px;">Colour Name</th>\n')
+cat('<th style="text-align: left; padding: 8px;">Variable Name</th>\n')
+cat('<th style="text-align: center; padding: 8px;">Colour</th>\n')
+cat('<th style="text-align: left; padding: 8px;">Hex Code</th>\n')
+cat('</tr>\n')
+cat('</thead>\n')
+cat('<tbody>\n')
+
+for (i in 1:nrow(msu_qual1_data)) {
+  cat('<tr style="border-bottom: 1px solid #ddd;">\n')
+  cat(sprintf('<td style="padding: 8px;">%s</td>\n', msu_qual1_data$name[i]))
+  cat(sprintf('<td style="padding: 8px; font-family: monospace; font-size: 0.9em;">%s</td>\n', msu_qual1_data$vars[i]))
+  cat(sprintf('<td style="text-align: center; padding: 8px;"><div style="background-color: %s; width: 100px; height: 30px; margin: auto; border: 1px solid #000;"></div></td>\n', msu_qual1_data$hex[i]))
+  cat(sprintf('<td style="padding: 8px; font-family: monospace;">%s</td>\n', msu_qual1_data$hex[i]))
+  cat('</tr>\n')
+}
+
+cat('</tbody>\n')
+cat('</table>\n')
+```
+
+
+
+## Big Ten Colour Palette
+
+The inclusion of primary and secondary colours for Big Ten institutions allows the easy comparison and identification of Big Ten institutions.
+
+```{r}
+#| label: display Big Ten colour palette
+#| echo: FALSE
+#| results: 'asis'
+library(MSUthemes)
+
+# Get unique institutions from primary colors (exclude duplicates like OSU, PSU, USC)
+primary_colors <- bigten_colors_primary
+secondary_colors <- bigten_colors_secondary
+
+# Remove duplicate entries for OSU, PSU, USC, USoCal
+institutions <- c("Indiana", "MSU", "Northwestern", "Ohio State", "Penn State",
+                 "Purdue", "Rutgers", "UCLA", "Illinois", "Iowa",
+                 "Maryland", "Michigan", "Minnesota", "Nebraska",
+                 "Oregon", "USC", "Washington", "Wisconsin")
+
+# Variable names for each institution (including aliases)
+institution_vars <- c(
+  "Indiana",
+  "MSU",
+  "Northwestern",
+  "Ohio State, OSU",
+  "Penn State, PSU",
+  "Purdue",
+  "Rutgers",
+  "UCLA",
+  "Illinois",
+  "Iowa",
+  "Maryland",
+  "Michigan",
+  "Minnesota",
+  "Nebraska",
+  "Oregon",
+  "USC, USoCal",
+  "Washington",
+  "Wisconsin"
+)
+
+# Create data frame for Big Ten colors
+bigten_data <- data.frame(
+  institution = institutions,
+  vars = institution_vars,
+  primary_hex = c(
+    primary_colors["Indiana"],
+    primary_colors["MSU"],
+    primary_colors["Northwestern"],
+    primary_colors["Ohio State"],
+    primary_colors["Penn State"],
+    primary_colors["Purdue"],
+    primary_colors["Rutgers"],
+    primary_colors["UCLA"],
+    primary_colors["Illinois"],
+    primary_colors["Iowa"],
+    primary_colors["Maryland"],
+    primary_colors["Michigan"],
+    primary_colors["Minnesota"],
+    primary_colors["Nebraska"],
+    primary_colors["Oregon"],
+    primary_colors["USC"],
+    primary_colors["Washington"],
+    primary_colors["Wisconsin"]
+  ),
+  secondary_hex = c(
+    secondary_colors["Indiana"],
+    secondary_colors["MSU"],
+    secondary_colors["Northwestern"],
+    secondary_colors["Ohio State"],
+    secondary_colors["Penn State"],
+    secondary_colors["Purdue"],
+    secondary_colors["Rutgers"],
+    secondary_colors["UCLA"],
+    secondary_colors["Illinois"],
+    secondary_colors["Iowa"],
+    secondary_colors["Maryland"],
+    secondary_colors["Michigan"],
+    secondary_colors["Minnesota"],
+    secondary_colors["Nebraska"],
+    secondary_colors["Oregon"],
+    secondary_colors["USC"],
+    secondary_colors["Washington"],
+    secondary_colors["Wisconsin"]
+  ),
+  stringsAsFactors = FALSE
+)
+
+# Create HTML table
+cat('<table style="width:100%; border-collapse: collapse;">\n')
+cat('<thead>\n')
+cat('<tr style="border-bottom: 2px solid #ddd;">\n')
+cat('<th style="text-align: left; padding: 8px;">Institution</th>\n')
+cat('<th style="text-align: left; padding: 8px;">Variable Name</th>\n')
+cat('<th style="text-align: center; padding: 8px;">Primary Colour</th>\n')
+cat('<th style="text-align: left; padding: 8px;">Primary Colour Hex Code</th>\n')
+cat('<th style="text-align: center; padding: 8px;">Secondary Colour</th>\n')
+cat('<th style="text-align: left; padding: 8px;">Secondary Colour Hex Code</th>\n')
+cat('</tr>\n')
+cat('</thead>\n')
+cat('<tbody>\n')
+
+for (i in 1:nrow(bigten_data)) {
+  cat('<tr style="border-bottom: 1px solid #ddd;">\n')
+  cat(sprintf('<td style="padding: 8px;">%s</td>\n', bigten_data$institution[i]))
+  cat(sprintf('<td style="padding: 8px; font-family: monospace; font-size: 0.9em;">%s</td>\n', bigten_data$vars[i]))
+  cat(sprintf('<td style="text-align: center; padding: 8px;"><div style="background-color: %s; width: 80px; height: 30px; margin: auto; border: 1px solid #000;"></div></td>\n', bigten_data$primary_hex[i]))
+  cat(sprintf('<td style="padding: 8px; font-family: monospace;">%s</td>\n', bigten_data$primary_hex[i]))
+  cat(sprintf('<td style="text-align: center; padding: 8px;"><div style="background-color: %s; width: 80px; height: 30px; margin: auto; border: 1px solid #000;"></div></td>\n', bigten_data$secondary_hex[i]))
+  cat(sprintf('<td style="padding: 8px; font-family: monospace;">%s</td>\n', bigten_data$secondary_hex[i]))
+  cat('</tr>\n')
+}
+
+cat('</tbody>\n')
+cat('</table>\n')
+```
+
+
+
+

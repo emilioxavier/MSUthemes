@@ -1,0 +1,16 @@
+^.*\.code-workspace$
+^.*\.Rproj$
+^\.Rproj\.user$
+.lintr
+.github
+MSU_colour_palette.png
+^\.github$
+^LICENSE\.md$
+README.Rmd
+README_files/
+codecov.yml
+CodeOfConduct.md
+CLAUDE.md
+^cran-comments\.md$
+^CRAN-SUBMISSION$
+data-raw/*
