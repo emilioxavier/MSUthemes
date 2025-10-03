@@ -1,0 +1,10 @@
+bibentry(
+  bibtype  = "Manual",
+  title    = "MSUthemes: Color palettes and themes for Michigan State University and Big Ten Institutions.",
+  author   = "Emilio Xavier Esposito",
+  date     = "2025-10-03",
+  doi      = "10.5281/zenodo.17259014",
+  version  = "1.29325061",
+  note     = "R package",
+  url      = "https://github.com/emilioxavier/MSUthemes"
+)

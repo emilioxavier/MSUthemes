@@ -13,7 +13,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CodeOfConduct.md)
 [![License: CC BY-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/XX.YYYY/zenodo.ZZZZZZ.svg)](https://doi.org/XX.YYYY/zenodo.ZZZZZZ)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17259014.svg)](https://doi.org/10.5281/zenodo.17259014)
 <!-- badges: end -->
 
 # — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="150" />
