@@ -7,7 +7,7 @@
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/MSUthemes)](https://cran.r-project.org/package=MSUthemes)
-[![R-CMD-check](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml)
 [![codecov](https://codecov.io/gh/emilioxavier/MSUthemes/branch/main/graph/badge.svg)](https://app.codecov.io/gh/emilioxavier/MSUthemes?branch=main)
 [![Contributor
 Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CodeOfConduct.md)
@@ -91,7 +91,6 @@ The package includes a comprehensive dataset (`BigTen`) containing
 historical institutional data for all 18 Big Ten Conference members from
 1996-2023:
 
-- **Coverage**: 504 rows × 38 variables
 - **Institutions**: All current Big Ten members (including UCLA, USC,
   Oregon, and Washington added in 2024)
 - **Variables**: Enrollment, graduation rates, admission rates, tuition,
@@ -307,9 +306,11 @@ for more information.
 ## Learn More
 
 For more detailed examples and comprehensive guides on using
-{MSUthemes}, including: - Complete examples with base R and ggplot2 -
-Advanced palette customization - Exporting publication-quality
-graphics - Best practices for data visualization
+{MSUthemes}, including:
+
+- Complete examples with base R and ggplot2
+- Advanced palette customization
+- Exporting publication-quality graphics
 
 See the package vignette:
 
@@ -317,6 +318,8 @@ See the package vignette:
 browseVignettes("MSUthemes")
 # or
 vignette("introduction", package = "MSUthemes")
+# or
+vignette("colour_palettes", package = "MSUthemes")
 ```
 
 ## Have a suggestion? Need help? Found a bug?
