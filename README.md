@@ -8,7 +8,6 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/MSUthemes)](https://cran.r-project.org/package=MSUthemes)
 [![R-CMD-check](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml)
-[![codecov](https://codecov.io/gh/emilioxavier/MSUthemes/branch/main/graph/badge.svg)](https://app.codecov.io/gh/emilioxavier/MSUthemes?branch=main)
 [![Contributor
 Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CodeOfConduct.md)
 [![License: CC BY-SA
