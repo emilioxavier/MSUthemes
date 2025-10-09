@@ -1,7 +1,7 @@
 Package: MSUthemes
 Type: Package
 Title: MSU Palettes and Themes
-Version: 1.29325061
+Version: 1.29333863
 Author: Authors@R: c(
     person(given="Emilio Xavier",
                   family="Esposito",
@@ -28,7 +28,8 @@ Imports:
   grDevices,
   purrr,
   showtext,
-  sysfonts
+  sysfonts,
+  systemfonts
 Suggests:
   covr,
   devtools,

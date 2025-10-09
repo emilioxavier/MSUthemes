@@ -23,3 +23,4 @@
 * Added `R CMD check` badge
 * Added codecov badge
 * Added Zenodo badge
+* **_Strongly encourage and recommend_** installing the Metropolis font as a system font. See Installing Metropolis Fonts vignette. `vignette("install_metropolis_font", package = "MSUthemes")` Addresses issue #2
