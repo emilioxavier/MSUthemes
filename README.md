@@ -112,7 +112,7 @@ Or install the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("emilioxavier/MSUthemes")
+devtools::install_github("emilioxavier/MSUthemes", build_vignettes=TRUE)
 ```
 
 ## Quick Start
