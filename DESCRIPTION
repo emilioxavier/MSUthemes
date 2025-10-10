@@ -1,7 +1,7 @@
 Package: MSUthemes
 Type: Package
 Title: MSU Palettes and Themes
-Version: 1.29333863
+Version: 1.29335187
 Author: Authors@R: c(
     person(given="Emilio Xavier",
                   family="Esposito",

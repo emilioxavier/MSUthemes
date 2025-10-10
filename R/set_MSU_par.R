@@ -19,6 +19,14 @@ set_msu_par <- function(family = "Metropolis",
                            mar = c(5, 3, 3, 2.5),
                            bty = "n",
                            ...) {
+
+  # Check font availability and use fallback if needed
+  family <- check_font_available(
+    requested_font = family,
+    fallback_font = "sans",
+    warn = TRUE
+  )
+
   graphics::par(
     family = family,
     adj = adj,

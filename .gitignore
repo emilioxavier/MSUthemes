@@ -5,6 +5,7 @@
 CRAN-SUBMISSION
 CLAUDE.md
 *.code-workspace
+*.html
 
 /.quarto/
 **/*.quarto_ipynb

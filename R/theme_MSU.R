@@ -46,6 +46,12 @@ theme_MSU <- function(base_size = 11, base_family = "Metropolis", header_family 
 #          strip.background = element_rect(linewidth = rel(2)),
 #          complete = TRUE)
 
+  # Check font availability and use fallback if needed
+  base_family <- check_font_available(
+    requested_font = base_family,
+    fallback_font = "sans",
+    warn = TRUE
+  )
 
   half_line <- base_size / 2
   small_size <- rel_small * base_size

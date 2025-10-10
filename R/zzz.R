@@ -4,7 +4,7 @@
   metropolis_installed <- any(grepl("Metropolis", system_fonts$family, ignore.case = TRUE))
 
   if (!metropolis_installed) {
-    # Metropolis not found as system font, use showtext as fallback
+    # Metropolis not found as system font, register the bundled fonts via showtext
     sysfonts::font_add(
       family = "Metropolis",
       # thin = system.file("fonts", "metropolis_5.1.0", "metropolis-latin-100-normal.ttf", package = "MSUthemes"),
@@ -33,9 +33,11 @@
     dpi <- if (Sys.info()["sysname"] == "Darwin") 72 else 96
     showtext::showtext_opts(dpi = dpi)
 
+    # Only enable showtext when using bundled fonts
+    # This avoids dimension issues when Metropolis is installed as system font
     showtext::showtext_auto()
   }
-  # If Metropolis is installed as system font, R will use it automatically
+  # If Metropolis is installed as system font, R will use it directly
 }
 
 .onAttach <- function(libname, pkgname) {
@@ -48,11 +50,35 @@
 
 MSUthemes_WelcomeMessage <- function() {
 
+  message(
+    "\n",
+    " <(^_^)> Welcome to MSUthemes! d[-_-]b\n")
+
   ## check if Metropolis font is installed
   system_fonts <- systemfonts::system_fonts()
   metropolis_installed <- any(grepl("Metropolis", system_fonts$family, ignore.case = TRUE))
   if (!metropolis_installed) {
-    message("\n [*_*] The Metropolis font is NOT installed as a system font!\n   -->> You are strongly encouraged to install the Metropolis as a system font.\n     }} See the 'Installing Metropolis Fonts' vignette. vignette('install_metropolis_font', package='MSUthemes')")
+    os.type <- Sys.info()["sysname"]
+    metropolis.font <- system.file("fonts/metropolis_5.1.0", package="MSUthemes")
+    message("\n [*_*] The Metropolis font is NOT installed as a system font!\n   -->> How to install Metropolis as a system font:")
+    # message(" - Locate the font files: In R, run:\n   system.file('fonts/metropolis_5.1.0', package='MSUthemes')\n")
+    if ( os.type == "Darwin" ) {
+      message(paste0("    - Open Finder and navigate to ", metropolis.font, "\n",
+                     "    - Select all .ttf files\n",
+                     "    - Double-click any selected font file and click the 'Install' button in Font Book"))
+    }
+    if ( os.type == "Linux" ) {
+      message(paste0("    - Copy the .ttf files to ~/.fonts/ (create the directory if it doesn't exist):\n",
+                     "      mkdir -p ~/.fonts\n",
+                     "      cp ", metropolis.font, "/*.ttf ~/.fonts/\n",
+                     "      fc-cache -fv"))
+    }
+    if ( os.type == "Windows" ) {
+      message(paste0("    - Open File Explorer and navigate to ", metropolis.font, "\n",
+                     "    - Select all .ttf files\n",
+                     "    - Right-click and select 'Install' (or 'Install for all users' if available)"))
+    }
+    message("    - Restart R/RStudio/VS Code")
   } else {
     message(" (O_O) The Metropolis font is installed as a system font!")
   }
@@ -67,7 +93,7 @@ MSUthemes_WelcomeMessage <- function() {
 
   paste0(
     "\n",
-    " <(^_^)> Welcome to MSUthemes! d[-_-]b\n\n",
+    # " <(^_^)> Welcome to MSUthemes! d[-_-]b\n\n",
     "  Current version: ", ver.full, "\n",
     "  Version ", ver.number, " Updated on ", format(build.date.UTC, format="%d/%b/%Y"), " @ ", format(build.date.UTC, format="%H:%M"), " UTC\n",
     "\n",
@@ -83,4 +109,63 @@ MSUthemes_WelcomeMessage <- function() {
     " d[-_-]b Happy Data Visualisation! <(^_^)>\n"
   )
 }
+
+#' Check font availability and return appropriate font family
+#'
+#' @description Internal helper function to check if Metropolis font is available
+#' (either as system font or via showtext) and return appropriate font family name.
+#' Issues a one-time warning per session if Metropolis is not available.
+#' In non-interactive contexts (like R CMD check), silently falls back without warning.
+#'
+#' @param requested_font Character string of requested font family. Default "Metropolis".
+#' @param fallback_font Character string of fallback font family. Default "sans".
+#' @param warn Logical, whether to warn if Metropolis is not available. Default TRUE.
+#'
+#' @return Character string of font family to use
+#' @keywords internal
+#' @noRd
+check_font_available <- function(requested_font = "Metropolis",
+                                   fallback_font = "sans",
+                                   warn = TRUE) {
+
+  # In R CMD check or other non-interactive contexts, use safe fallback
+  # System fonts may not work correctly with all graphics devices
+  if (!interactive()) {
+    return(fallback_font)
+  }
+
+  # Check if Metropolis is available as system font
+  system_fonts <- systemfonts::system_fonts()
+  metropolis_system <- any(grepl("Metropolis", system_fonts$family, ignore.case = TRUE))
+
+  # Check if Metropolis is registered with showtext/sysfonts
+  showtext_fonts <- try(sysfonts::font_families(), silent = TRUE)
+  metropolis_showtext <- if (!inherits(showtext_fonts, "try-error")) {
+    "Metropolis" %in% showtext_fonts
+  } else {
+    FALSE
+  }
+
+  # Metropolis is available if it's either a system font or registered with showtext
+  metropolis_available <- metropolis_system || metropolis_showtext
+
+  if (metropolis_available) {
+    return(requested_font)
+  } else {
+    # Warn once per session
+    if (warn && !exists("font_warning_shown", envir = .MSUthemes_env)) {
+      warning(
+        "Metropolis font is not available. Using '", fallback_font, "' instead.\n",
+        "  For best results, install Metropolis as a system font.\n",
+        "  See installation instructions: library(MSUthemes)",
+        call. = FALSE
+      )
+      assign("font_warning_shown", TRUE, envir = .MSUthemes_env)
+    }
+    return(fallback_font)
+  }
+}
+
+# Package environment to track warnings
+.MSUthemes_env <- new.env(parent = emptyenv())
 

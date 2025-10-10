@@ -311,7 +311,8 @@ instructions should enable you to install Metropolis as a system font.
     find the directory
 2.  Open Finder and navigate to that directory
 3.  Select all `.ttf` files
-4.  Double-click any font file and click “Install Font” in Font Book
+4.  Double-click any selected font file and click the “Install” button
+    in Font Book
 5.  Restart R/RStudio/VS Code
 
 #### Windows
