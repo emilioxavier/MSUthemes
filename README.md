@@ -9,7 +9,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/MSUthemes)](https://cran.r-project.org/package=MSUthemes)
 [![R-CMD-check](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/emilioxavier/MSUthemes/actions/workflows/R-CMD-check.yml)
 [![Contributor
-Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](CodeOfConduct.md)
+Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](https://emilioxavier.github.io/MSUthemes/CodeOfConduct.html)
 [![License: CC BY-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17259014.svg)](https://doi.org/10.5281/zenodo.17259014)
