@@ -1,6 +1,6 @@
 Package: MSUthemes
 Type: Package
-Title: MSU Palettes and Themes
+Title: Michigan State University (MSU) Palettes and Themes
 Version: 1.29339466
 Authors@R: c(
     person(given="Emilio Xavier",
