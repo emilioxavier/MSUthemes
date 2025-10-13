@@ -2,14 +2,14 @@ Package: MSUthemes
 Type: Package
 Title: MSU Palettes and Themes
 Version: 1.29339466
-Author: Authors@R: c(
+Authors@R: c(
     person(given="Emilio Xavier",
                   family="Esposito",
                   role=c("aut", "cre", "cph"),
                   email="emilio.esposito@gmail.com",
                   comment=c(ORCID="0000-0002-6193-0485",
                             "GitHub: https://github.com/emilioxavier")),
-    person(given = "Nicola", family = "Rennie", role = c("aut"), email = "nrennie35@gmail.com")
+    person(given = "Nicola", family = "Rennie", role = c("aut"), email = "nrennie35@gmail.com"),
     person("Michigan State University", role = c("fnd")))
 Maintainer: Emilio Xavier Esposito <emilio.esposito@gmail.com>
 Description: Defines colour palettes and themes for Michigan State
