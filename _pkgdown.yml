@@ -1,0 +1,115 @@
+url: https://emilioxavier.github.io/MSUthemes/
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  light-switch: true
+  bslib:
+    primary: '#18453b'
+    base_font:
+      google: Fira Sans
+    code_font:
+      google: Fira Code
+    code-color: '#212529'
+    code-bg: '#f8f9fa'
+  includes:
+    in_header: |
+      <style>
+      .navbar .version {
+        color: #d2d5d8 !important;
+        opacity: 1;
+      }
+      .navbar .version:hover {
+        color: #d2d5d8 !important;
+        opacity: 1;
+      }
+      /* Fix lightswitch visibility in dark mode */
+      [data-bs-theme="dark"] .lightswitch {
+        color: #ffffff !important;
+        opacity: 0.8;
+      }
+      [data-bs-theme="dark"] .lightswitch:hover {
+        opacity: 1;
+      }
+      /* Ensure lightswitch is always visible */
+      .lightswitch {
+        color: #212529 !important;
+        opacity: 0.8;
+      }
+      .lightswitch:hover {
+        opacity: 1;
+      }
+      </style>
+  params:
+    ganalytics: "G-64VHTKDFL0"
+home:
+  title: MSU Themes and Color Palettes
+  description: |
+    MSU color palettes and themes for R graphics and ggplot2
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right:
+    - search
+    - github
+    - lightswitch
+    - bluesky
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: Introduction
+        href: articles/introduction.html
+      - text: Colour Palettes
+        href: articles/colour_palettes.html
+      - text: Installing Metropolis Font
+        href: articles/install_metropolis_font.html
+    bluesky:
+      icon: "fa-brands fa-bluesky fa-lg"
+      href: https://bsky.app/profile/exesposito.bsky.social
+      aria-label: Bluesky
+reference:
+- title: Color Palettes
+  desc: MSU and Big Ten color palettes
+  contents:
+  - MSUcols
+  - MSUpalettes
+  - get_bigten_colors
+  - bigten_colors_primary
+  - bigten_colors_secondary
+- title: Individual MSU Colors
+  desc: Individual MSU color constants
+  contents: starts_with("msu_")
+- title: ggplot2 Scales
+  desc: Color and fill scales for ggplot2
+  contents:
+  - starts_with("scale_color")
+  - starts_with("scale_colour")
+  - starts_with("scale_fill")
+- title: Themes
+  desc: Custom ggplot2 themes
+  contents: theme_MSU
+- title: Utilities
+  desc: Helper functions for working with palettes
+  contents:
+  - view_all_palettes
+  - set_msu_palette
+  - set_msu_par
+  - print.palette
+- title: Data
+  desc: Included datasets
+  contents: BigTen
+authors:
+  Emilio Xavier Esposito:
+    href: https://github.com/emilioxavier
+  Nicola Rennie:
+    href: https://github.com/nrennie
+footer:
+  structure:
+    left: developed_by
+    right: built_with

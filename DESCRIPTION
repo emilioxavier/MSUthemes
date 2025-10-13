@@ -1,7 +1,7 @@
 Package: MSUthemes
 Type: Package
 Title: MSU Palettes and Themes
-Version: 1.29335187
+Version: 1.29339466
 Author: Authors@R: c(
     person(given="Emilio Xavier",
                   family="Esposito",
@@ -42,6 +42,6 @@ Suggests:
   rmarkdown,
   testthat (>= 3.0.0)
 VignetteBuilder: quarto
-URL: https://github.com/emilioxavier/MSUthemes
+URL: https://github.com/emilioxavier/MSUthemes, https://emilioxavier.github.io/MSUthemes/
 BugReports: https://github.com/emilioxavier/MSUthemes/issues
 LazyData: true

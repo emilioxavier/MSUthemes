@@ -15,74 +15,77 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](C
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17259014.svg)](https://doi.org/10.5281/zenodo.17259014)
 <!-- badges: end -->
 
-# — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="150" />
+# — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="120" />
 
-The {MSUthemes} package provides color palettes and themes for [Michigan
-State University (MSU)](https://msu.edu/) and comprehensive color
-support for all Big Ten Conference institutions. The package includes
-MSU-specific palettes (sequential, diverging, and qualitative) designed
-to align with MSU’s branding guidelines, as well as individual and
-aggregate color palettes for all 18 Big Ten institutions, making it
-ideal for multi-institutional comparisons and collaborative research
-visualizations using {ggplot2}.
+The **MSUthemes** package provides colour palettes and themes for
+[Michigan State University (MSU)](https://msu.edu/) and comprehensive
+colour support for all [Big Ten Conference](https://bigten.org/)
+institutions. The package includes MSU-specific palettes (sequential,
+diverging, and qualitative) designed to align with [MSU’s branding
+guidelines](https://brand.msu.edu), uses the Metropolis font ([MSU’s
+chosen font](https://brand.msu.edu/visual/typography)) in the
+construction of the plots, as well as the primary and secondary colour
+palettes for all 18 Big Ten institutions, making it ideal for
+multi-institutional comparisons and collaborative research
+visualizations using ggplot2.
 
 This package is inspired by the
 [RSSthemes](https://github.com/nrennie/RSSthemes) package and based on
 the work of [Andreas Krause](https://las.inf.ethz.ch/krausea), [Nicola
 Rennie](https://nrennie.rbind.io/), and [Brian
-Tarran](https://brtarran.github.io/). While the original
-[RSSthemes](https://github.com/nrennie/RSSthemes) package focused on the
-[Royal Statistical Society (RSS)](https://rss.org.uk/) branding, this
-package adapts the concepts to fit MSU’s visual identity. The
-{MSUthemes} package uses the
-[RSSthemes](https://github.com/nrennie/RSSthemes) framework, replaces
-the [RSS](https://rss.org.uk/) colour palettes with MSU colour palettes,
-and adds comprehensive Big Ten Conference institutional colors with
-reliable institution-to-color matching capabilities.
+Tarran](https://brtarran.github.io/). While the original RSSthemes
+package focused on the [Royal Statistical Society
+(RSS)](https://rss.org.uk/) branding, this package adapts the concepts
+to fit MSU’s visual identity. The MSUthemes package uses the RSSthemes
+framework, replaces the RSS colour palettes and font with MSU colour
+palettes and font, respectively, and adds comprehensive Big Ten
+Conference institutional colours with reliable institution-to-colour
+matching capabilities.
 
-The authors of the [RSSthemes](https://github.com/nrennie/RSSthemes)
-package have created an excellent website discussing the [‘Best
-Practices for Data Visualisation’, published by the Royal Statistical
+The authors of the RSSthemes package have created an excellent website
+discussing the [‘Best Practices for Data Visualisation’, published by
+the Royal Statistical
 Society](https://github.com/royal-statistical-society/datavisguide). The
 RSS companion website is a great resource for anyone interested in data
 visualization and provides valuable insights into effective data
-communication. The {MSUthemes} package aims to bring these best
-practices to the MSU community, helping users create visually appealing
-and informative graphics that mirror MSU’s branding guidelines.
+communication. The MSUthemes package aims to bring these best practices
+to the MSU community, helping users create visually appealing and
+informative graphics that mirror MSU’s branding guidelines.
 
-## Color Palettes
+## Colour Palettes
 
 The colour palettes, and associated variables, are displayed in the
-[MSUthemes Colour Palettes](vignettes/colour_palettes.qmd) vignette (see
-`vignette("colour_palettes", package = "MSUthemes")`).
+[MSUthemes Colour
+Palettes](https://emilioxavier.github.io/MSUthemes/articles/colour_palettes.html)
+vignette (see `vignette("colour_palettes", package = "MSUthemes")`).
 
-### MSU Color Palettes
+### MSU Colour Palettes
 
-The MSU color palettes provided within {MSUthemes} are based on the
+The MSU colour palettes provided within MSUthemes are based on the
 official MSU branding guidelines, which can be found here:
-<https://brand.msu.edu/visual/color-palette>. The official MSU color
-palettes include the primary colors green and white, as well as
-secondary colors black, silver, gray, and accent colors.
+<https://brand.msu.edu/visual/color-palette>. The official MSU colour
+palettes include the primary colours green and white, as well as
+secondary colours black, silver, gray, and accent colours.
 
-The {MSUthemes} package includes several MSU palette types:
+The MSUthemes package includes several MSU palette types:
 
 - **Sequential palettes**: `msu_seq`, `msu_seq_red`, `msu_seq_blue`,
   etc.
 - **Diverging palettes**: `msu_div`
 - **Qualitative palettes**: `msu_qual1`, `msu_qual2`
 
-Individual MSU colors are also available as constants (*e.g.*,
+Individual MSU colours are also available as constants (*e.g.*,
 `msu_green`, `msu_orange`, `msu_teal`, and `msu_grellow`).
 
-### Big Ten Conference Colors
+### Big Ten Conference Colours
 
-The package provides comprehensive color support for all Big Ten
+The package provides comprehensive colour support for all Big Ten
 Conference institutions, making it ideal for multi-institutional
 comparisons and collaborative research visualizations.
 
-**Named Color Vectors for Reliable Matching:** -
-`bigten_colors_primary`: Named vector for exact institution-to-color
-matching - `bigten_colors_secondary`: Named vector for secondary colors
+**Named Colour Vectors for Reliable Matching:** -
+`bigten_colors_primary`: Named vector for exact institution-to-colour
+matching - `bigten_colors_secondary`: Named vector for secondary colours
 
 ### Big Ten Dataset
 
@@ -102,7 +105,7 @@ multi-institutional comparisons.
 
 ## Installation
 
-You can install {MSUthemes} from CRAN:
+You can install MSUthemes from CRAN:
 
 ``` r
 install.packages("MSUthemes")
@@ -136,14 +139,15 @@ ggplot(MSU_df, aes(x = entry_term, y = UGDS)) +
 ![](tools/README-quickstart-1.png)<!-- -->
 
 > **Note**: The colour palettes, and associated variables, are displayed
-> in the [MSUthemes Colour Palettes](vignettes/colour_palettes.qmd)
+> in the [MSUthemes Colour
+> Palettes](https://emilioxavier.github.io/MSUthemes/articles/colour_palettes.html)
 > vignette (see `vignette("colour_palettes", package = "MSUthemes")`).
 
 ## Usage Examples
 
-The {MSUthemes} package includes a comprehensive dataset (`BigTen`) with
+The MSUthemes package includes a comprehensive dataset (`BigTen`) with
 historical data (1996-2023) for all 18 Big Ten institutions, making it
-easy to create relevant examples and explore the color palettes.
+easy to create relevant examples and explore the colour palettes.
 
 ### Using MSU Palettes
 
@@ -187,14 +191,14 @@ ggplot(slice(MSU_df, 2:14),
 
 ![](tools/README-msu-example2-1.png)<!-- -->
 
-### Using Big Ten Colors for Multi-Institutional Comparisons
+### Using Big Ten Colours for Multi-Institutional Comparisons
 
-The {MSUthemes} package provides three methods for using Big Ten
-institutional colors:
+The MSUthemes package provides three methods for using Big Ten
+institutional colours:
 
 **Method 1: Named vectors for specific institutions (recommended)**
 
-This ensures exact color matching regardless of data order:
+This ensures exact colour matching regardless of data order:
 
 ``` r
 # Get 2023 data for all Big Ten institutions
@@ -217,7 +221,7 @@ ggplot(BigTen_2023,
 **Method 2: Helper function with error checking**
 
 ``` r
-# Select specific institutions and get their colors
+# Select specific institutions and get their colours
 my_institutions <- c("Michigan", "Ohio State", "MSU", "Northwestern")
 my_colors <- get_bigten_colors(my_institutions, type = "primary")
 
@@ -256,10 +260,10 @@ ggplot(BigTen_2023, aes(x = reorder(name, UGDS), y = UGDS, fill = name)) +
 
 ### Focusing on Individual Institutions
 
-You can focus on a single institution using its official colors:
+You can focus on a single institution using its official colours:
 
 ``` r
-# Focus on Michigan with its official primary color
+# Focus on Michigan with its official primary colour
 Michigan_df <- filter(BigTen, name == "Michigan")
 
 ggplot(Michigan_df, aes(x = entry_term, y = UGDS)) +
@@ -347,25 +351,38 @@ If you don’t install Metropolis as a system font, the package will
 automatically use it via the `showtext` package, but this may cause
 slight changes to plot dimensions.
 
-### Add Additional Fonts to R for {ggplot2}
+### Add Additional Fonts to R for ggplot2
 
 [Dan Oehm](https://gradientdescending.com/) has [a great blog
 post](https://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
-on adding additional fonts to {ggplot2} using the [{showtext}
-package](). Please see the [{showtext} package
+on adding additional fonts to ggplot2 using the [showtext
+package](https://cran.r-project.org/package=showtext). Please see the
+[showtext package
 vignette](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html)
 for more information.
 
 ## Learn More
 
-For more detailed examples and comprehensive guides on using
-{MSUthemes}, including:
+For more detailed examples and comprehensive guides on using MSUthemes,
+including:
 
 - Complete examples with base R and ggplot2
 - Advanced palette customization
 - Exporting publication-quality graphics
 
-See the package vignette:
+See the package vignettes:
+
+- [Introduction to
+  MSUthemes](https://emilioxavier.github.io/MSUthemes/articles/introduction.html) -
+  Getting started guide with examples
+- [Colour
+  Palettes](https://emilioxavier.github.io/MSUthemes/articles/colour_palettes.html) -
+  Complete palette reference
+- [Installing Metropolis
+  Font](https://emilioxavier.github.io/MSUthemes/articles/install_metropolis_font.html) -
+  Font installation guide
+
+Or view them in R:
 
 ``` r
 browseVignettes("MSUthemes")
