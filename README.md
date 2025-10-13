@@ -357,9 +357,8 @@ slight changes to plot dimensions.
 post](https://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
 on adding additional fonts to ggplot2 using the [showtext
 package](https://cran.r-project.org/package=showtext). Please see the
-[showtext package
-vignette](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html)
-for more information.
+[showtext’s GitHub page](https://github.com/yixuan/showtext) for more
+information.
 
 ## Learn More
 
@@ -405,7 +404,8 @@ MSUthemes’ Code of Conduct is essentially [Code of Conduct version
 3.0](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 provided by [Contributor
 Covenant](https://www.contributor-covenant.org/). The full text of the
-Code of Conduct can be found in the [CodeOfConduct.md](CodeOfConduct.md)
+Code of Conduct can be found in the
+[CodeOfConduct.md](https://emilioxavier.github.io/MSUthemes/CodeOfConduct.html)
 file.
 
 ## License

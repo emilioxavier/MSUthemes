@@ -308,8 +308,7 @@ but this may cause slight changes to plot dimensions.
 ### Add Additional Fonts to R for ggplot2
 [Dan Oehm](https://gradientdescending.com/) has [a great blog post](https://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
 on adding additional fonts to ggplot2 using the [showtext package](https://cran.r-project.org/package=showtext). Please see the
-[showtext package vignette](https://cran.r-project.org/web/packages/showtext/vignettes/introduction.html)
-for more information.
+[showtext's GitHub page](https://github.com/yixuan/showtext) for more information.
 
 ## Learn More
 
