@@ -1,4 +1,4 @@
-# MSUthemes 1.29339408
+# MSUthemes 1.0.0
 
 * Selected License: Attribution-ShareAlike 4.0 International [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 * Added Code of Conduct [https://www.contributor-covenant.org/version/3/0/code_of_conduct/](https://www.contributor-covenant.org/version/3/0/code_of_conduct/) with Contributor Covenant badge
@@ -25,3 +25,4 @@
 * Added Zenodo badge
 * **_Strongly encourage and recommend_** installing the Metropolis font as a system font. See Installing Metropolis Fonts vignette. `vignette("install_metropolis_font", package = "MSUthemes")` Addresses issue #2
 * Constructed MSUthemes website using [pkgdown](https://pkgdown.r-lib.org/). Thank you @claude!
+* Changed the version number to a convential scheme instead of the number of minutes since the UNIX epoch

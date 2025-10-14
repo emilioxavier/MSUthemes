@@ -95,7 +95,7 @@ MSUthemes_WelcomeMessage <- function() {
     "\n",
     # " <(^_^)> Welcome to MSUthemes! d[-_-]b\n\n",
     "  Current version: ", ver.full, "\n",
-    "  Version ", ver.number, " Updated on ", format(build.date.UTC, format="%d/%b/%Y"), " @ ", format(build.date.UTC, format="%H:%M"), " UTC\n",
+#    "  Version ", ver.number, " Updated on ", format(build.date.UTC, format="%d/%b/%Y"), " @ ", format(build.date.UTC, format="%H:%M"), " UTC\n",
     "\n",
     "  Introduction: browseVignettes(package='MSUthemes')\n",
     "  How to cite: citation('MSUthemes')\n",
@@ -168,4 +168,3 @@ check_font_available <- function(requested_font = "Metropolis",
 
 # Package environment to track warnings
 .MSUthemes_env <- new.env(parent = emptyenv())
-
