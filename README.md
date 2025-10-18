@@ -136,7 +136,7 @@ ggplot(MSU_df, aes(x = entry_term, y = UGDS)) +
   theme_MSU()
 ```
 
-![](tools/README-quickstart-1.png)<!-- -->
+![](man/figures/README-quickstart-1.png)<!-- -->
 
 > **Note**: The colour palettes, and associated variables, are displayed
 > in the [MSUthemes Colour
@@ -173,7 +173,7 @@ ggplot(MSU_df,
   theme(legend.position = "right")
 ```
 
-![](tools/README-msu-example1-1.png)<!-- -->
+![](man/figures/README-msu-example1-1.png)<!-- -->
 
 ``` r
 # MSU qualitative palette - comparing recent cohorts
@@ -189,7 +189,7 @@ ggplot(slice(MSU_df, 2:14),
   theme_MSU()
 ```
 
-![](tools/README-msu-example2-1.png)<!-- -->
+![](man/figures/README-msu-example2-1.png)<!-- -->
 
 ### Using Big Ten Colours for Multi-Institutional Comparisons
 
@@ -216,7 +216,7 @@ ggplot(BigTen_2023,
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![](tools/README-bigten-example1-1.png)<!-- -->
+![](man/figures/README-bigten-example1-1.png)<!-- -->
 
 **Method 2: Helper function with error checking**
 
@@ -243,7 +243,7 @@ ggplot(filter(BigTen_2023, name %in% my_institutions),
         legend.direction = "horizontal")
 ```
 
-![](tools/README-bigten-example2-1.png)<!-- -->
+![](man/figures/README-bigten-example2-1.png)<!-- -->
 
 **Method 3: Use aggregate palette for all 18 institutions**
 
