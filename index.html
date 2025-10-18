@@ -185,7 +185,7 @@
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"MSU Undergraduate Enrollment"</span>,</span>
 <span>       x <span class="op">=</span> <span class="st">"Entry Term"</span>, y <span class="op">=</span> <span class="st">"Enrollment"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/theme_MSU.html">theme_MSU</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="tools/README-quickstart-1.png"><!-- --></p>
+<p><img src="reference/figures/README-quickstart-1.png"><!-- --></p>
 <blockquote>
 <p><strong>Note</strong>: The colour palettes, and associated variables, are displayed in the <a href="https://emilioxavier.github.io/MSUthemes/articles/colour_palettes.html">MSUthemes Colour Palettes</a> vignette (see <code><a href="articles/colour_palettes.html">vignette("colour_palettes", package = "MSUthemes")</a></code>).</p>
 </blockquote>
@@ -217,7 +217,7 @@
 <span>       y <span class="op">=</span> <span class="st">"Undergraduate Enrollment"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/theme_MSU.html">theme_MSU</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"right"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="tools/README-msu-example1-1.png"><!-- --></p>
+<p><img src="reference/figures/README-msu-example1-1.png"><!-- --></p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># MSU qualitative palette - comparing recent cohorts</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html" class="external-link">slice</a></span><span class="op">(</span><span class="va">MSU_df</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">14</span><span class="op">)</span>,</span>
@@ -230,7 +230,7 @@
 <span>       y <span class="op">=</span> <span class="st">"Graduation Rate (Percentage, %)"</span>,</span>
 <span>       fill <span class="op">=</span> <span class="st">"Entry Term"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/theme_MSU.html">theme_MSU</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="tools/README-msu-example2-1.png"><!-- --></p>
+<p><img src="reference/figures/README-msu-example2-1.png"><!-- --></p>
 </div>
 <div class="section level3">
 <h3 id="using-big-ten-colours-for-multi-institutional-comparisons">Using Big Ten Colours for Multi-Institutional Comparisons<a class="anchor" aria-label="anchor" href="#using-big-ten-colours-for-multi-institutional-comparisons"></a>
@@ -252,7 +252,7 @@
 <span>       subtitle <span class="op">=</span> <span class="st">"Fall 2023"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/theme_MSU.html">theme_MSU</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span>, hjust <span class="op">=</span> <span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="tools/README-bigten-example1-1.png"><!-- --></p>
+<p><img src="reference/figures/README-bigten-example1-1.png"><!-- --></p>
 <p><strong>Method 2: Helper function with error checking</strong></p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Select specific institutions and get their colours</span></span>
@@ -275,7 +275,7 @@
 <span>  <span class="fu"><a href="reference/theme_MSU.html">theme_MSU</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.box <span class="op">=</span> <span class="st">"vertical"</span>,</span>
 <span>        legend.direction <span class="op">=</span> <span class="st">"horizontal"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="tools/README-bigten-example2-1.png"><!-- --></p>
+<p><img src="reference/figures/README-bigten-example2-1.png"><!-- --></p>
 <p><strong>Method 3: Use aggregate palette for all 18 institutions</strong></p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">BigTen_2023</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/reorder.factor.html" class="external-link">reorder</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">UGDS</span><span class="op">)</span>, y <span class="op">=</span> <span class="va">UGDS</span>, fill <span class="op">=</span> <span class="va">name</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -416,6 +416,7 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=MSUthemes" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/emilioxavier/MSUthemes/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/emilioxavier/MSUthemes/issues" class="external-link">Report a bug</a></li>
 </ul>
