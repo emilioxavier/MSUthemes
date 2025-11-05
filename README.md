@@ -13,6 +13,8 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](h
 [![License: CC BY-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17259014.svg)](https://doi.org/10.5281/zenodo.17259014)
+[![](http://cranlogs.r-pkg.org/badges/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes)
+[![](http://cranlogs.r-pkg.org/badges/last-week/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes)
 <!-- badges: end -->
 
 # — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="120" />

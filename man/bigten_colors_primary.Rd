@@ -5,7 +5,7 @@
 \alias{bigten_colors_primary}
 \title{Named vector of Big Ten primary colors for reliable institution matching}
 \format{
-An object of class \code{character} of length 21.
+An object of class \code{character} of length 22.
 }
 \usage{
 bigten_colors_primary

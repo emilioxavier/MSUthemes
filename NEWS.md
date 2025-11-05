@@ -1,3 +1,7 @@
+# MSUthemes 1.0.1
+
+* Added "Ohio St" as an option for Ohio State University in the Big Ten colour palettes
+
 # MSUthemes 1.0.0
 
 * Selected License: Attribution-ShareAlike 4.0 International [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
