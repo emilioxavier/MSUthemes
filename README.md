@@ -13,11 +13,17 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](h
 [![License: CC BY-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17259014.svg)](https://doi.org/10.5281/zenodo.17259014)
+<!-- [![](http://cranlogs.r-pkg.org/badges/grand-total/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes)
 [![](http://cranlogs.r-pkg.org/badges/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes)
-[![](http://cranlogs.r-pkg.org/badges/last-week/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes)
+[![](http://cranlogs.r-pkg.org/badges/last-week/MSUthemes?color=green)](https://cran.r-project.org/package=MSUthemes) -->
 <!-- badges: end -->
 
 # — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="120" />
+
+> **🐍 Python User?** Check out
+> [**msuthemes-py**](https://github.com/emilioxavier/msuthemes-py) — the
+> Python version of this package with the same palettes and themes for
+> matplotlib and seaborn.
 
 The **MSUthemes** package provides colour palettes and themes for
 [Michigan State University (MSU)](https://msu.edu/) and comprehensive
