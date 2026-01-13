@@ -1,7 +1,7 @@
 # — \>\> MSUthemes \<\< —
 
 > **🐍 Python User?** Check out
-> [**msuthemes-py**](https://github.com/emilioxavier/msuthemes-py) — the
+> [**msuthemes-py**](https://emilioxavier.github.io/msuthemes-py/) — the
 > Python version of this package with the same palettes and themes for
 > matplotlib and seaborn.
 
