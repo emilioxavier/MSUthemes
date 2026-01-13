@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 
 # --- >> MSUthemes << --- <img src="man/figures/logo.png" align="right" width="120" />
 
-> **🐍 Python User?** Check out [**msuthemes-py**](https://github.com/emilioxavier/msuthemes-py) — the Python version of this package with the same palettes and themes for matplotlib and seaborn.
+> **🐍 Python User?** Check out [**msuthemes-py**](https://emilioxavier.github.io/msuthemes-py/) — the Python version of this package with the same palettes and themes for matplotlib and seaborn.
 
 The **MSUthemes** package provides colour palettes and themes for [Michigan State University (MSU)](https://msu.edu/)
 and comprehensive colour support for all [Big Ten Conference](https://bigten.org/) institutions. The package includes MSU-specific

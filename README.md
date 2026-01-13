@@ -21,7 +21,7 @@ Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](h
 # — \>\> MSUthemes \<\< — <img src="man/figures/logo.png" align="right" width="120" />
 
 > **🐍 Python User?** Check out
-> [**msuthemes-py**](https://github.com/emilioxavier/msuthemes-py) — the
+> [**msuthemes-py**](https://emilioxavier.github.io/msuthemes-py/) — the
 > Python version of this package with the same palettes and themes for
 > matplotlib and seaborn.
 
